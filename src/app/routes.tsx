@@ -1,10 +1,11 @@
+import Layout from "@/layouts/Layout";
+import { Inicio, Ingresos, Egresos } from './modul';
 import { createBrowserRouter } from "react-router-dom";
-import { Inicio, Ingresos, Egresos, Root } from './modul';
 
 const routes = createBrowserRouter([
     {
-        path: '/', 
-        Component: Root, 
+        path: '/',
+        Component: Layout, 
         children: [
             {index: true, Component: Inicio},
             {path: '/ingresos', Component: Ingresos},
